@@ -37,6 +37,10 @@ a:link {
     color: orange;
 }
 
+a:visited {
+    color: orange;
+}
+
 .btn {
     border: 2px solid orange;
     width: fit-content;
@@ -103,7 +107,7 @@ footer .image-container {
     min-height: 40vh;
     min-width: 100vw;
     background-position: center;
-    background-position-y: 100%;
+    background-position-y: 110%;
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
