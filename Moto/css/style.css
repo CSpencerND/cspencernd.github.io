@@ -16,7 +16,7 @@ body {
     /* text-transform: uppercase; */
     font-weight: 300;
     line-height: 2;
-    letter-spacing: 0.0625em;
+    letter-spacing: 0.125em;
 }
 
 hr {
@@ -50,10 +50,15 @@ a:visited {
     font-weight: 400;
 }
 
+/* .showcase { */
+/*     display: flex; */
+/*     justify-content: space-between; */
+/* } */
+
 .showcase header {
     width: 100%;
-    top: 0;
-    left: 0;
+    /* top: 0; */
+    /* left: 0; */
     position: absolute;
     z-index: 9;
     display: flex;
