@@ -100,10 +100,10 @@ main {
 
 footer .image-container {
     background: url('../assets/skull.jpg');
-    min-height: 50vh;
+    min-height: 20vh;
     min-width: 100vw;
     background-position: center;
-    background-position-y: 100%;
+    background-position-y: 120%;
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
