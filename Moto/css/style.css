@@ -103,31 +103,12 @@ main {
 }
 
 footer .image-container {
-    background: url('../assets/skull.jpg');
-    min-height: 40vh;
-    min-width: 100vw;
+    background-image: url("../assets/skull.jpg");
     background-position: center;
-    background-position-y: 110%;
-    background-size: contain;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: cover; 
+    min-height: 20vh;
 }
-
-/* footer .image-container .skull { */
-    /* width: 100%; */
-    /* position: fixed; */
-    /* background-size: contain; */
-    /* background-repeat: no-repeat; */
-    /* object-fit: contain; */
-    /* background: url("assets/skull.jpg"); */
-    /* background-position: center; */
-    /* position: absolute; */
-/* } */
-
-/* footer { */
-    /* width: 90%; */
-    /* margin: 1em auto; */
-/* } */
 
 footer .contact {
     display: flex;
