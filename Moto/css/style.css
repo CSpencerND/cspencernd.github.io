@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 :root {
-    --fg-dark: #ebdbb2;
-    --fg-light: #fbf1c7;
-    --bg-dark: #1d2021;
-    --bg-light: #282828;
-    --orange-dark: #d65d0e;
-    --orange-light: #fe8019;
-    --yellow-dark: #d79921;
-    --yellow-light: #fabd2f;
+    --fg: #fbf1c7;
+    /* --fg: #ebdbb2; */
+    --bg: #1d2021;
+    /* --bg: #282828; */
+    --orange: #fe8019;
+    /* --orange: #d65d0e; */
+    --yellow: #fabd2f;
+    /* --yellow: #d79921; */
 }
 
 * {
@@ -20,8 +20,8 @@
 }
 
 body {
-    color: var(--fg-dark);
-    background-color: var(--bg-dark);
+    color: var(--fg);
+    background-color: var(--bg);
     font-family: 'Oswald', sans-serif;
     /* font-size: 1.125em; */
     /* text-transform: uppercase; */
@@ -32,7 +32,7 @@ body {
 
 hr {
     margin: 1em 0 2em;
-    border-color: var(--orange-dark);
+    border-color: var(--orange);
 }
 
 h1 {
@@ -45,15 +45,15 @@ a {
 }
 
 a:link {
-    color: var(--orange-dark);
+    color: var(--orange);
 }
 
 a:visited {
-    color: var(--orange-dark);
+    color: var(--orange);
 }
 
 .btn {
-    border: 2px solid var(--orange-dark);
+    border: 2px solid var(--orange);
     width: fit-content;
     padding: 0.5em 1em;
     cursor: pointer;
