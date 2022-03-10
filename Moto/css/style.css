@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?&family=Miltonian+Tattoo&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?&family=Miltonian+Tattoo&display=swap'); */
 
 :root {
     --fg: #fbf1c7;
@@ -106,7 +105,7 @@ main {
     margin: 1em auto;
 }
 
-.quote h1 {
+main .quote h1 {
     margin-top: 1em;
 }
 
