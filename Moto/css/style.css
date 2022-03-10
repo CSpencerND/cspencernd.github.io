@@ -60,7 +60,7 @@ a:visited {
 
 .showcase header {
     width: 100%;
-    /* position: absolute; */
+    position: absolute;
     z-index: 9;
     display: flex;
     align-items: center;
