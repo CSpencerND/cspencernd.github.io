@@ -5,8 +5,8 @@
     --fg: #fbf1c7;
     /* --fg: #ebdbb2; */
     --bg: #1d2021;
-    /* --bg: #282828; */
-    --bg-trans: hsl(195 6% 12% / .9);
+    --bg-light: #282828;
+    --bg-trans: hsl(195 6% 12% / 0.9);
     /* --bg-trans: hsl(0 0 16 / .9); */
     --orange: #fe8019;
     /* --orange: #d65d0e; */
@@ -55,9 +55,9 @@ a:visited {
     border: 2px solid var(--orange);
     width: fit-content;
     padding: 0.5em 1em;
-    cursor: pointer;
     margin: 2em 0;
     font-weight: 400;
+    /* cursor: pointer; */
 }
 
 .nav-box {
@@ -78,20 +78,32 @@ header .logo {
     width: 50%;
     padding-top: 0.5em;
     margin-left: 1.5em;
+    position: relative;
+    z-index: 2;
 }
 
 header .toggle {
+    position: relative;
+    z-index: 2;
     width: 80px;
     height: 60px;
     background: url('../assets/icons/menu-open.png');
     background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
-    cursor: pointer;
+    transition: 0.25s;
+    /* cursor: pointer; */
 }
 
 .nav {
-    display: none;
+    width: 100%;
+    position: absolute;
+    top: -150vw;
+    /* top: 0; */
+    transition: .25s;
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--orange);
+    padding-top: 5em;
 }
 
 .menu {
@@ -103,28 +115,23 @@ header .toggle {
     gap: 1em;
 }
 
-/*
- * {{{ toggle click events
- */
-
+/* {{{ toggle click events */
 .nav.active {
-    display: block;
+    top: 0;
 }
 
 .nav-box.active {
-    position: relative;
+    /* position: relative; */
 }
 
 header .toggle.active {
     background: url('../assets/icons/menu-close-orange.png');
-    background-size: 25px;
+    background-size: 20px;
     background-position: center;
     background-repeat: no-repeat;
+    transform: rotate(90deg);
 }
-
-/*
- * toggle click events }}}
- */
+/* toggle click events }}} */
 
 /* @media (max-width: 35em) { */
 /*     ul { */
@@ -135,10 +142,15 @@ header .toggle.active {
 /*     } */
 /* } */
 
-.showcase video {
+.video-container {
+    width: 100%;
+}
+
+video {
     width: 100%;
     opacity: 0.5;
     filter: sepia();
+    position: relative;
 }
 
 main {
