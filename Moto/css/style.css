@@ -6,6 +6,8 @@
     /* --fg: #ebdbb2; */
     --bg: #1d2021;
     /* --bg: #282828; */
+    --bg-trans: hsl(195 6% 12% / .9);
+    /* --bg-trans: hsl(0 0 16 / .9); */
     --orange: #fe8019;
     /* --orange: #d65d0e; */
     --yellow: #fabd2f;
@@ -58,22 +60,27 @@ a:visited {
     font-weight: 400;
 }
 
-.showcase header {
-    width: 100%;
+.nav-box {
     position: absolute;
-    z-index: 9;
+    z-index: 1;
+}
+
+header {
+    width: 100%;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.showcase header #logo {
+header .logo {
     width: 50%;
     padding-top: 0.5em;
-    margin-left: 5%;
+    margin-left: 1.5em;
 }
 
-.showcase header #toggle {
+header .toggle {
     width: 80px;
     height: 60px;
     background: url('../assets/icons/menu-open.png');
@@ -83,33 +90,55 @@ a:visited {
     cursor: pointer;
 }
 
-.showcase header #toggle.active {
-    background: url('../assets/icons/menu-close.png');
-    background-size: 25px;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-
-.showcase video {
-    width: 100%;
-    opacity: 0.3;
-}
-
-ul {
-    font-weight: 500;
-    display: flex;
-    gap: 1em;
+.nav {
     display: none;
 }
 
-@media (max-width: 35em) {
-    ul {
-        position: fixed;
-        flex-direction: column;
-        inset: 0 0 0 30%;
-        background-color: var(--bg);
-    }
+.menu {
+    padding: 1em;
+    font-weight: 500;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/*
+ * {{{ toggle click events
+ */
+
+.nav.active {
+    display: block;
+}
+
+.nav-box.active {
+    position: relative;
+}
+
+header .toggle.active {
+    background: url('../assets/icons/menu-close-orange.png');
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*
+ * toggle click events }}}
+ */
+
+/* @media (max-width: 35em) { */
+/*     ul { */
+/*         position: fixed; */
+/*         flex-direction: column; */
+/*         inset: 0 0 0 30%; */
+/*         background-color: var(--bg); */
+/*     } */
+/* } */
+
+.showcase video {
+    width: 100%;
+    opacity: 0.5;
+    filter: sepia();
 }
 
 main {
