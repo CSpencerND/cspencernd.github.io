@@ -149,7 +149,7 @@ header .toggle.active {
 video {
     width: 100%;
     opacity: 0.5;
-    filter: sepia();
+    /* filter: sepia(); */
     position: relative;
 }
 
