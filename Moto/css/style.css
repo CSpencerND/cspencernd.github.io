@@ -152,13 +152,13 @@ header .toggle-box.active .toggle {
 header .toggle-box.active .toggle:before {
     transition: transform 0.5s;
     transform: rotateZ(45deg) translate(6.5px, 9px);
-    background: var(--yellow);
+    background: var(--fg);
 }
 
 header .toggle-box.active .toggle:after {
     transition: transform 0.5s;
     transform: rotateZ(-405deg) translate(6.5px, -9px);
-    background: var(--yellow);
+    background: var(--fg);
 }
 /* toggle click events }}} */
 
