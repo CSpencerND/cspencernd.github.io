@@ -3,15 +3,15 @@
 
 :root {
     --fg: #fbf1c7;
-    /* --fg: #ebdbb2; */
-    --bg: #1d2021;
-    --bg-light: #282828;
+    --fg-dim: #ebdbb2;
+    --bg-bright: #1d2021;
+    --bg: #282828;
     --bg-trans: hsl(195 6% 12% / 0.9);
     /* --bg-trans: hsl(0 0 16 / .9); */
     --orange: #fe8019;
     /* --orange: #d65d0e; */
-    --yellow: #fabd2f;
-    /* --yellow: #d79921; */
+    /* --yellow: #fabd2f; */
+    --yellow: #d79921;
 }
 
 * {
@@ -46,7 +46,6 @@ h1 {
 a:link {
     color: var(--orange);
 }
-
 a:visited {
     color: var(--orange);
 }
@@ -57,52 +56,73 @@ a:visited {
     padding: 0.5em 1em;
     margin: 2em 0;
     font-weight: 400;
-    /* cursor: pointer; */
 }
 
 .nav-box {
     position: absolute;
     z-index: 1;
+    width: 100%;
 }
-
 header {
     width: 100%;
-    padding-top: 0.5em;
-    padding-right: 0.5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 8%;
+    padding-left: 5%;
 }
 
 header .logo {
-    width: 50%;
-    padding-top: 0.5em;
-    margin-left: 1.5em;
+    width: 15em;
+    padding-top: 1em;
     position: relative;
     z-index: 2;
 }
 
-header .toggle {
+header .toggle-box {
+    width: 30px;
+    height: 22px;
     position: relative;
     z-index: 2;
-    width: 80px;
-    height: 60px;
-    background: url('../assets/icons/menu-open.png');
-    background-size: 30px;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 0.25s;
     /* cursor: pointer; */
+}
+header .toggle {
+    height: 3px;
+    width: 30px;
+    background-color: var(--fg);
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    position: absolute;
+    top: 11px;
+}
+header .toggle:before {
+    height: inherit;
+    width: inherit;
+    background-color: inherit;
+    border-radius: inherit;
+    transition-duration: inherit;
+    position: inherit;
+    content: '';
+    top: -11px;
+}
+header .toggle:after {
+    height: inherit;
+    width: inherit;
+    background-color: inherit;
+    border-radius: inherit;
+    transition-duration: inherit;
+    position: inherit;
+    content: '';
+    top: 11px;
 }
 
 .nav {
     width: 100%;
     position: absolute;
     top: -150vw;
-    /* top: 0; */
-    transition: .25s;
-    background-color: var(--bg);
-    border-bottom: 1px solid var(--orange);
+    transition: 0.5s;
+    background-color: var(--bg-bright);
+    border-bottom: 2px solid var(--orange);
     padding-top: 5em;
 }
 
@@ -115,21 +135,30 @@ header .toggle {
     gap: 1em;
 }
 
+.menu a {
+    color: var(--yellow);
+}
+
 /* {{{ toggle click events */
 .nav.active {
     top: 0;
 }
 
-.nav-box.active {
-    /* position: relative; */
+header .toggle-box.active .toggle {
+    transition: 0.5s;
+    background: transparent;
 }
 
-header .toggle.active {
-    background: url('../assets/icons/menu-close-orange.png');
-    background-size: 20px;
-    background-position: center;
-    background-repeat: no-repeat;
-    transform: rotate(90deg);
+header .toggle-box.active .toggle:before {
+    transition: transform 0.5s;
+    transform: rotateZ(45deg) translate(6.5px, 9px);
+    background: var(--yellow);
+}
+
+header .toggle-box.active .toggle:after {
+    transition: transform 0.5s;
+    transform: rotateZ(-405deg) translate(6.5px, -9px);
+    background: var(--yellow);
 }
 /* toggle click events }}} */
 
@@ -148,7 +177,7 @@ header .toggle.active {
 
 video {
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.3;
     /* filter: sepia(); */
     position: relative;
 }
@@ -158,8 +187,12 @@ main {
     margin: 1em auto;
 }
 
-main .quote h1 {
+main .quote {
     margin-top: 1em;
+}
+
+main .quote {
+    margin-top: 4em;
 }
 
 footer .image-container {
@@ -168,14 +201,29 @@ footer .image-container {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 30vh;
+    margin-bottom: 2em;
 }
 
-footer .contact {
+.bottom-mobile-nav {
+    font-size: 1.5em;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--bg-bright);
+    padding: 2%;
 }
 
-footer p {
-    font-weight: 500;
+.bottom-mobile-nav a {
+    color: var(--yellow);
 }
+/* footer .contact { */
+/*     display: flex; */
+/*     justify-content: space-around; */
+/*     align-items: center; */
+/* } */
+
+/* footer p { */
+/*     font-weight: 500; */
+/* } */
