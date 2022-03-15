@@ -10,6 +10,7 @@
             type="image/x-icon"
         />
         <link href="css/main.css" rel="stylesheet" />
+        <link href="css/services.css" rel="stylesheet" />
         <link rel="icon" href="assets/icons/favicon.png" type="image/x-icon" />
         <link
             rel="stylesheet"
@@ -45,54 +46,67 @@
             </nav>
         </section>
 
-        <section class="video-container">
-            <video
-                src="https://i.imgur.com/Zppdkp6.mp4"
-                autoplay
-                loop
-                muted
-            ></video>
-        </section>
+        <section class="image-container"></section>
 
         <main>
             <section class="about">
-                <h1>Repairs you can trust</h1>
-                <hr />
                 <p>
-                    Velocita is a motorcycle service and repair shop in Red
-                    Hook. I work on everything from the most current superbikes
-                    to carbureted road bikes.
+                    At Velocita, you can make an appointment to get your Ducati
+                    or Triumph serviced. Here you can find the service intervals
+                    for your specific models.
                 </p>
                 <br />
                 <p>
-                    With over 15 years of experience working on Ducatis,
-                    Triumphs, and older BMWs, I am dedicated to doing honest
-                    work and being a trustworthy shop in an industry where that
-                    is not always the perception.
+                    It is recommended to get your oil replaced once a year if
+                    you don’t go the mileage between service intervals.
                 </p>
-                <br />
-                <p>Come check out Velocita and see for yourself!</p>
             </section>
-            <section class="quote">
-                <h1>Get a quote</h1>
-                <hr />
-                <div>
-                    <p>
-                        I can do an oil change, a custom build, or anything in
-                        between. Click below for a service quote.
-                    </p>
-                    <p class="btn">
-                        <a href="mailto:motovelocita@gmail.com" target="_blank"
-                            >REQUEST</a
-                        >
-                    </p>
+            <hr />
+            <section class="details">
+                <div class="ducati makes">
+                    <h1>Ducati</h1>
+                    <ul>
+                        <li>
+                            <a href="assets/docs/scrambler.pdf" target="_blank"
+                                >Scrambler</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="assets/docs/testastretta.pdf"
+                                target="_blank"
+                                >Testastretta</a
+                            >
+                        </li>
+                        <li>
+                            <a href="assets/docs/panigale.pdf" target="_blank"
+                                >Panigale</a
+                            >
+                        </li>
+                        <li>
+                            <a href="assets/docs/two-valve.pdf" target="_blank"
+                                >Two-Valve Engines</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="triumph makes">
+                    <h1>Triumph</h1>
+                    <ul>
+                        <li>
+                            <a href="assets/docs/10k.pdf" target="_blank"
+                                >Water-Cooled 10k Interval</a
+                            >
+                        </li>
+                        <li>
+                            <a href="assets/docs/6k.pdf" target="_blank"
+                                >Air-Cooled 6k Interval</a
+                            >
+                        </li>
+                    </ul>
                 </div>
             </section>
         </main>
-
-        <footer>
-            <section class="image-container"></section>
-        </footer>
 
         <section class="bottom-mobile-nav">
             <a href="mailto:motovelocita@gmail.com" target="_blank">
@@ -115,14 +129,14 @@
         <script>
             const nav = document.querySelector('nav')
             const menuToggle = document.querySelector('.toggle-box')
-            const videoContainer = document.querySelector('.video-container')
+            const imageContainer = document.querySelector('.image-container')
             const main = document.querySelector('main')
             const footer = document.querySelector('footer')
 
             menuToggle.onclick = () => {
                 nav.classList.toggle('active')
                 menuToggle.classList.toggle('active')
-                videoContainer.classList.toggle('active')
+                imageContainer.classList.toggle('active')
                 main.classList.toggle('active')
                 footer.classList.toggle('active')
             }

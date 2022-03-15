@@ -1,0 +1,33 @@
+.nav-box {
+    background: linear-gradient(180deg, #282828 0%, #1d2021 50%);
+}
+
+.image-container {
+    background-image: url('../assets/branding/invert-skull.jpg');
+    background-position-y: 8%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 30vh;
+    margin-bottom: 2em;
+    transition: transform 0.25s;
+}
+
+.about {
+    padding-bottom: 1em;
+}
+
+main {
+    padding-bottom: 3em;
+}
+
+main li {
+    font-size: 1.5em;
+}
+
+main li:before {
+    content: "\f1c1";
+}
+
+.makes {
+    padding-bottom: 2em;
+}
