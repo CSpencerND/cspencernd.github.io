@@ -26,7 +26,7 @@ body {
     color: var(--fg);
     background-color: var(--bg);
     font-family: 'Oswald', sans-serif;
-    /* font-size: 1.125em; */
+    font-size: 1.25rem;
     /* text-transform: uppercase; */
     font-weight: 300;
     line-height: 2;
