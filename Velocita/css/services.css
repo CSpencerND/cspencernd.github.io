@@ -10,6 +10,8 @@
     min-height: 30vh;
     margin-bottom: 2em;
     transition: transform 0.25s;
+    min-height: 33vh;
+    opacity: 0.9;
 }
 
 .about {
@@ -24,9 +26,21 @@ main li {
     font-size: 1.5em;
 }
 
-main li:before {
-    content: "\f1c1";
+.fa-file-pdf {
+    color: #cc241d;
+    padding-right: 0.5em;
 }
+/* main li:before { */
+/*     font-family: 'Font Awesome 5 Free'; */
+/*     content: '\f1c1'; */
+/*     color: #cc241d; */
+/*     padding-right: 0.5em; */
+/* } */
+/* main li a { */
+/*     display: inline-block; */
+/*     position: absolute; */
+/*     width: 100%; */
+/* } */
 
 .makes {
     padding-bottom: 2em;
