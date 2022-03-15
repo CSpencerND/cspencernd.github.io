@@ -139,6 +139,7 @@ header .toggle:after {
     /* padding: 0 1em 1em; */
     /* bottom: 0.5em; */
     padding: 1em;
+    /* font-family: "Miltonian Tattoo"; */
     font-weight: 500;
     font-size: 1.5em;
     display: flex;
