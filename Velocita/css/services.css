@@ -1,5 +1,5 @@
 .nav-box {
-    background: linear-gradient(180deg, #282828 0%, #1d2021 50%);
+    background: linear-gradient(180deg, var(--bg-bright) 0%, var(--bg) 50%);
 }
 
 .image-container {
@@ -29,18 +29,8 @@ main li {
 .fa-file-pdf {
     color: #9d0006;
     padding-right: 0.5em;
+    opacity: 0.667;
 }
-/* main li:before { */
-/*     font-family: 'Font Awesome 5 Free'; */
-/*     content: '\f1c1'; */
-/*     color: #cc241d; */
-/*     padding-right: 0.5em; */
-/* } */
-/* main li a { */
-/*     display: inline-block; */
-/*     position: absolute; */
-/*     width: 100%; */
-/* } */
 
 .makes {
     padding-bottom: 2em;

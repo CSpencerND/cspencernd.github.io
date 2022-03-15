@@ -3,8 +3,8 @@
 :root {
     --fg: #fbf1c7;
     --fg-dim: #ebdbb2;
-    --bg-bright: #1d2021;
     --bg: #282828;
+    --bg-bright: #3c3836;
     --bg-trans: hsl(195 6% 12% / 0.9);
     /* --bg-trans: hsl(0 0 16 / .9); */
     --orange: #fe8019;
@@ -81,7 +81,6 @@ header .toggle-box {
     width: 30px;
     height: 22px;
     position: relative;
-    margin-bottom: 1em;
     z-index: 2;
     /* cursor: pointer; */
 }
@@ -120,9 +119,7 @@ header .toggle:after {
     position: absolute;
     top: 0;
     transition: 0.25s ease-in-out;
-    /* background-color: var(--bg-bright); */
-    background: linear-gradient(180deg, #282828 0%, #1d2021 50%);
-    /* border-bottom: 2px solid var(--orange); */
+    background: linear-gradient(180deg, var(--bg-bright) 0%, var(--bg) 50%);
     padding-top: 6em;
     padding-bottom: 1em;
     border-radius: 0 0 15px 15px;
@@ -254,7 +251,7 @@ footer .image-container {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(0deg, #282828 0%, #1d2021 75%);
+    background: linear-gradient(180deg, var(--bg-bright) 0%, var(--bg) 50%);
     padding: 2%;
 }
 
