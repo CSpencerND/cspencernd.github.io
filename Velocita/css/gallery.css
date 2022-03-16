@@ -1,7 +1,3 @@
-.nav-box {
-    /* background: linear-gradient(180deg, var(--bg-bright) 0%, var(--bg) 50%); */
-}
-
 .image-container {
     background-image: url('../assets/gallery/header_img.jpg');
     background-repeat: no-repeat;
@@ -12,24 +8,10 @@
     opacity: 0.5;
 }
 
-.about {
-    padding-bottom: 1em;
-}
-
 main {
-    padding-bottom: 3em;
+    margin-bottom: 4em;
 }
 
-main li {
-    font-size: 1.125em;
-}
-
-.fa-file-pdf {
-    color: #9d0006;
-    padding-right: 0.5em;
-    opacity: 0.667;
-}
-
-.makes {
-    padding-bottom: 2em;
+main img {
+    width: 100%;
 }
