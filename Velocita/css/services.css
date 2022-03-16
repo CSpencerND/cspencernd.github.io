@@ -4,14 +4,12 @@
 
 .image-container {
     background-image: url('../assets/branding/invert-skull.jpg');
-    background-position-y: 8%;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 30vh;
     margin-bottom: 2em;
     transition: transform 0.25s;
-    min-height: 33vh;
-    opacity: 0.9;
+    min-height: 36vh;
+    opacity: 0.8;
 }
 
 .about {
