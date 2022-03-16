@@ -87,7 +87,7 @@ header .toggle-box {
 header .toggle {
     height: 3px;
     width: 30px;
-    background-color: var(--fg);
+    background-color: white;
     border-radius: 20px;
     position: absolute;
     top: 11px;

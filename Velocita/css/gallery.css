@@ -1,15 +1,15 @@
 .nav-box {
-    background: linear-gradient(180deg, var(--bg-bright) 0%, var(--bg) 50%);
+    /* background: linear-gradient(180deg, var(--bg-bright) 0%, var(--bg) 50%); */
 }
 
 .image-container {
-    background-image: url('../assets/branding/invert-skull.jpg');
+    background-image: url('../assets/gallery/header_img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 2em;
     transition: transform 0.25s;
     min-height: 36vh;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 .about {
