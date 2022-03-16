@@ -89,7 +89,6 @@ header .toggle {
     width: 30px;
     background-color: var(--fg);
     border-radius: 20px;
-    transition: 0.25s;
     position: absolute;
     top: 11px;
 }
@@ -98,7 +97,7 @@ header .toggle:before {
     width: inherit;
     background-color: inherit;
     border-radius: inherit;
-    transition: top 0.25s;
+    transition: top 0.5s;
     position: inherit;
     content: '';
     top: -11px;
@@ -108,7 +107,7 @@ header .toggle:after {
     width: inherit;
     background-color: inherit;
     border-radius: inherit;
-    transition: top 0.25s;
+    transition: top 0.5s;
     position: inherit;
     content: '';
     top: 11px;
@@ -172,7 +171,6 @@ header .toggle-box.active .toggle:after {
     transition: top 0.25s, transform 0.25s 0.25s;
     transform: rotateZ(45deg);
 }
-
 /* toggle click events }}} */
 
 /* @media (max-width: 35em) { */
