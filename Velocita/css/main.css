@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?&family=Miltonian+Tattoo&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?&family=Miltonian+Tattoo&display=swap');
 :root {
     --fg: #fbf1c7;
     --fg-dim: #ebdbb2;
+    --bg-darker: #1d2021;
     --bg: #282828;
     --bg-bright: #3c3836;
     --bg-trans: hsl(195 6% 12% / 0.9);
@@ -27,7 +28,7 @@ body {
     background-color: var(--bg);
     font-family: 'Oswald', sans-serif;
     font-size: 1.25rem;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     font-weight: 300;
     line-height: 2;
     letter-spacing: 0.0625em;
@@ -73,7 +74,7 @@ header {
     padding-left: 5%;
 }
 header .logo {
-    width: 11em;
+    width: 10em;
     position: relative;
     z-index: 2;
 }
@@ -82,14 +83,13 @@ header .toggle-box {
     height: 22px;
     position: relative;
     z-index: 2;
-    /* cursor: pointer; */
 }
 header .toggle {
     height: 3px;
     width: 30px;
     background-color: var(--fg);
     border-radius: 20px;
-    transition-duration: 0.5s;
+    transition: 0.25s;
     position: absolute;
     top: 11px;
 }
@@ -98,7 +98,7 @@ header .toggle:before {
     width: inherit;
     background-color: inherit;
     border-radius: inherit;
-    transition-duration: inherit;
+    transition: top 0.25s;
     position: inherit;
     content: '';
     top: -11px;
@@ -108,7 +108,7 @@ header .toggle:after {
     width: inherit;
     background-color: inherit;
     border-radius: inherit;
-    transition-duration: inherit;
+    transition: top 0.25s;
     position: inherit;
     content: '';
     top: 11px;
@@ -118,25 +118,22 @@ header .toggle:after {
     width: 100%;
     position: absolute;
     top: 0;
-    transition: 0.25s ease-in-out;
-    background: linear-gradient(180deg, var(--bg-bright) 0%, var(--bg) 50%);
-    padding-top: 6em;
-    padding-bottom: 1em;
+    background: linear-gradient(180deg, var(--bg-bright) 0%, var(--bg) 20%);
+    padding-top: 3.5em;
     border-radius: 0 0 15px 15px;
     height: 0;
     opacity: 0;
+    border-bottom: 4px solid var(--orange);
+    transition: opacity 0.5s;
 }
 .nav * {
     height: 0;
     opacity: 0;
-    transition: 0.5s ease-in-out;
 }
 
 .menu {
-    /* padding: 0 1em 1em; */
-    /* bottom: 0.5em; */
-    padding: 1em;
-    /* font-family: "Miltonian Tattoo"; */
+    padding: 1em 0.66em;
+    font-family: 'Miltonian Tattoo';
     font-weight: 500;
     font-size: 1.5em;
     display: flex;
@@ -149,14 +146,14 @@ header .toggle:after {
 
 /* {{{ toggle click events */
 .nav.active {
-    height: fit-content;
+    transition: height 0.25s ease-in-out 0.1s;
+    height: 70vh;
     opacity: 100%;
-    transition: 0.25s 0.25s ease-in-out;
 }
 .nav.active * {
-    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+    height: 40%;
     opacity: 100%;
-    transition: 0.25s 0.25s ease-in-out;
 }
 
 header .toggle-box.active .toggle {
@@ -164,38 +161,16 @@ header .toggle-box.active .toggle {
     background: transparent;
 }
 header .toggle-box.active .toggle:before {
-    transition: top 0.25s, transform 0.25s 0.25s;
-    /* transform: rotateZ(45deg) translate(6.5px, 9px); */
     background: var(--fg);
     top: 0;
+    transition: top 0.25s, transform 0.25s 0.25s;
     transform: rotateZ(-45deg);
 }
 header .toggle-box.active .toggle:after {
-    transition: top 0.25s, transform 0.25s 0.25s;
-    /* transform: rotateZ(-405deg) translate(6.5px, -9px); */
     background: var(--fg);
     top: 0;
+    transition: top 0.25s, transform 0.25s 0.25s;
     transform: rotateZ(45deg);
-}
-
-.video-container.active {
-    transition: transform 0.25s 0.25s ease-in-out;
-    transform: translateY(26em);
-}
-
-.image-container.active {
-    transition: transform 0.25s 0.25s ease-in-out;
-    transform: translateY(26em);
-}
-
-main.active {
-    transition: transform 0.25s 0.25s ease-in-out;
-    transform: translateY(26em);
-}
-
-footer.active {
-    transition: transform 0.25s 0.25s ease-in-out;
-    transform: translateY(26em);
 }
 
 /* toggle click events }}} */
@@ -217,13 +192,12 @@ footer.active {
 video {
     width: 100%;
     opacity: 0.3;
-    /* filter: sepia(); */
     position: relative;
 }
 
 main {
     width: 90%;
-    margin: 1em auto;
+    margin: auto;
     transition: transform 0.25s;
 }
 main .quote {
@@ -258,4 +232,3 @@ footer .image-container {
 .bottom-mobile-nav a {
     color: var(--yellow);
 }
-
