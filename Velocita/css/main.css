@@ -208,6 +208,10 @@ main .quote {
     padding-bottom: 2em;
 }
 
+main .quote p {
+    margin-bottom: 1.5em;
+}
+
 footer {
     transition: transform 0.25s;
 }

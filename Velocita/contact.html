@@ -46,53 +46,60 @@
             </nav>
         </section>
 
-        <main>
+        <section class="contact">
             <h2>CONTACT ME</h2>
-            <section class="contact">
-                <form>
-                    <fieldset>
-                        <legend>Name<span> *</span></legend>
-                        <div class="field-container">
-                            <div class="field">
-                                <input type="text" name="firstName" />
-                                <label>First Name</label>
-                            </div>
-                            <div class="field">
-                                <input type="text" name="lastName" />
-                                <label>Last Name</label>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Email<span> *</span></legend>
+            <form>
+                <fieldset>
+                    <legend>Name<span> *</span></legend>
+                    <div class="field-container">
                         <div class="field">
-                            <input type="text" name="email" />
+                            <input
+                                type="text"
+                                name="firstName"
+                                placeholder="FIRST NAME"
+                            />
                         </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Phone<span> *</span></legend>
                         <div class="field">
-                            <input type="text" name="phone" />
+                            <input
+                                type="text"
+                                name="lastName"
+                                placeholder="LAST NAME"
+                            />
                         </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>
-                            Project Description (include year/make/model)<span>
-                                *</span
-                            >
-                        </legend>
-                        <div class="field">
-                            <textarea rows="5" cols=""></textarea>
-                        </div>
-                    </fieldset>
-                    <p class="btn">
-                        <a href="mailto:motovelocita@gmail.com" target="_blank"
-                            >SUBMIT</a
-                        >
-                    </p>
-                </form>
-            </section>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Email<span> *</span></legend>
+                    <div class="field">
+                        <input type="text" name="email" />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Phone<span> *</span></legend>
+                    <div class="field">
+                        <input type="text" name="phone" />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="description">
+                        Project Description <br />
+                        <span class="include">include year/make/model</span
+                        ><span> *</span>
+                    </legend>
+                    <div class="field">
+                        <textarea rows="5" cols=""></textarea>
+                    </div>
+                </fieldset>
+                <a
+                    class="btn"
+                    href="mailto:motovelocita@gmail.com"
+                    target="_blank"
+                    >SUBMIT</a
+                >
+            </form>
+        </section>
 
+        <main>
             <address>
                 Kerry Sano <br />
                 97 Union Street <br />

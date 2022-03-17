@@ -3,25 +3,29 @@
     position: relative;
 }
 
-main {
-    padding-top: 1em;
-}
-
-main img {
-    width: 100%;
-}
-
-main * {
+* {
     font-weight: normal;
+}
+
+.contact {
+    margin: 1em auto 0;
+    width: 95%;
+}
+
+.contact h2 {
+    padding-left: .25em;
 }
 
 form {
     /* display: grid; */
     background-color: var(--bg-bright);
-    background: radial-gradient(circle, rgba(29,32,33,1) 0%, rgba(60,56,54,1) 90%);
-    padding: .5em;
+    background: radial-gradient(
+        circle,
+        rgba(29, 32, 33, 1) 0%,
+        rgba(60, 56, 54, 1) 90%
+    );
+    padding: 0.5em;
     margin-top: 1em;
-    width: 100%;
 }
 
 fieldset {
@@ -32,7 +36,7 @@ fieldset {
 
 .field-container {
     display: flex;
-    gap: .5em;
+    gap: 0.5em;
 }
 
 .field-container .field {
@@ -46,16 +50,36 @@ fieldset {
     max-width: 100%;
 }
 
+legend {
+    font-size: 0.75em;
+}
+
 label {
     font-size: 0.5em;
 }
 
 input {
-    height: 2.5em;
+    height: 2.75em;
+    border-radius: 4px;
+    background: transparent;
 }
 
 textarea {
     height: 10em;
+    background: transparent;
+}
+
+input,
+textarea {
+    color: var(--fg);
+}
+
+.description {
+    line-height: initial;
+}
+
+.include {
+    font-size: 0.75em;
 }
 
 .btn {
