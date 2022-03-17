@@ -1,5 +1,5 @@
 .nav-box {
-    background: linear-gradient(180deg, var(--bg-bright) 0%, var(--bg) 50%);
+    background: linear-gradient(0deg, var(--bg-bright) 0%, var(--bg) 50%);
 }
 
 .image-container {

@@ -1,9 +1,10 @@
 .nav-box {
-    background: linear-gradient(180deg, var(--bg-bright) 0%, var(--bg) 50%);
+    background: linear-gradient(0deg, var(--bg-bright) 0%, var(--bg) 50%);
     position: relative;
 }
 
 main {
+    padding-top: 1em;
     padding-bottom: 3em;
 }
 

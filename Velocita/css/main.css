@@ -54,7 +54,7 @@ a:visited {
 .btn {
     border: 2px solid var(--orange);
     width: fit-content;
-    padding: 0.5em 1em;
+    padding: 0.25em 0.5em;
     margin: 2em 0;
     font-weight: 400;
 }
@@ -141,6 +141,7 @@ header .toggle:after {
 }
 .menu a {
     color: var(--yellow);
+    display: none;
 }
 
 /* {{{ toggle click events */
@@ -153,6 +154,10 @@ header .toggle:after {
     transition: opacity 0.5s ease-in-out;
     height: 40%;
     opacity: 100%;
+}
+
+.nav.active .menu a {
+    display: initial;
 }
 
 header .toggle-box.active .toggle {
@@ -223,7 +228,7 @@ footer .image-container {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(180deg, var(--bg-bright) 0%, var(--bg) 50%);
+    background: linear-gradient(180deg, var(--bg-bright) 0%, var(--bg) 75%);
     padding: 2%;
 }
 
