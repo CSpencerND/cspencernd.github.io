@@ -1,0 +1,33 @@
+.nav-box {
+    background: linear-gradient(180deg, var(--bg-bright) 0%, var(--bg) 50%);
+    position: relative;
+}
+
+main {
+    padding-bottom: 3em;
+}
+
+main figure {
+    padding-bottom: 2em;
+}
+
+main img {
+    width: 100%;
+}
+
+main h3 {
+    font-weight: normal;
+}
+
+main p a {
+    padding-left: 0.25em;
+}
+
+figcaption {
+    font-size: 1rem;
+    text-transform: initial;
+}
+
+.about {
+    padding-bottom: 1em;
+}
