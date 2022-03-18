@@ -26,41 +26,50 @@ form {
     );
     padding: 0.5em;
     margin-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-
 form p {
-    border: none;
     padding-bottom: 1.5em;
-    max-width: 100%;
 }
-
+form .last {
+    visibility: hidden;
+}
 form label {
+    display: block;
     font-size: 0.75em;
 }
-
 form input {
-    font-size: 1em;
     border-radius: 4px;
     background: var(--bg);
 }
-
 form textarea {
-    font-size: 1em;
+    /* font-size: 1em; */
     background: var(--bg);
     resize: none;
 }
-
 form input,
-textarea {
+form textarea {
     color: var(--fg);
 }
-
-form p .description .include {
+form .description {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+form .description .include {
     font-size: 0.75em;
 }
+form .full {
+    grid-column: 1 / 3;
+}
 
-form .btn {
-    margin: 0;
+form button,
+form input,
+form textarea {
+    width: 100%;
+    font-size: 0.875em;
+    padding: 0.25em;
 }
 /* FORM }}} */
 
