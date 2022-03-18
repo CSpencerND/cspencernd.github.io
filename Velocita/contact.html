@@ -49,47 +49,53 @@
         <section class="contact">
             <h2>CONTACT ME</h2>
             <form>
-                <fieldset>
-                    <legend>Name<span> *</span></legend>
-                    <div class="field-container">
-                        <div class="field">
-                            <input
-                                type="text"
-                                name="firstName"
-                                placeholder="FIRST NAME"
-                            />
-                        </div>
-                        <div class="field">
-                            <input
-                                type="text"
-                                name="lastName"
-                                placeholder="LAST NAME"
-                            />
-                        </div>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Email<span> *</span></legend>
-                    <div class="field">
-                        <input type="text" name="email" />
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Phone<span> *</span></legend>
-                    <div class="field">
-                        <input type="text" name="phone" />
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend class="description">
-                        Project Description <br />
-                        <span class="include">include year/make/model</span
-                        ><span> *</span>
-                    </legend>
-                    <div class="field">
-                        <textarea rows="5" cols=""></textarea>
-                    </div>
-                </fieldset>
+                <p>
+                    <label for="firstName">Name</label>
+                    <input
+                        type="text"
+                        name="firstName"
+                        placeholder="first"
+                        required
+                    />
+                </p>
+                <p>
+                    <label for="lastName"></label>
+                    <input
+                        type="text"
+                        name="lastName"
+                        placeholder="last"
+                        required
+                    />
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input
+                        type="text"
+                        name="email"
+                        placeholder="name@email.com"
+                        required
+                    />
+                </p>
+                <p>
+                    <label for="phone">Phone</label>
+                    <input
+                        type="text"
+                        name="phone"
+                        placeholder="555-123-4567"
+                        required
+                    />
+                </p>
+                <p>
+                    <label for="details" class="description">
+                        Project Description
+                        <span class="include">include year/make/model</span>
+                    </label>
+                    <textarea
+                        name="details"
+                        rows="5"
+                        required
+                    ></textarea>
+                </p>
                 <a
                     class="btn"
                     href="mailto:motovelocita@gmail.com"

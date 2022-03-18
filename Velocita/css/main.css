@@ -132,7 +132,7 @@ header .toggle:after {
 
 .menu {
     padding: 1em 0.66em;
-    font-family: 'Miltonian Tattoo';
+    font-family: 'Miltonian Tattoo', 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 1.5em;
     display: flex;
