@@ -35,13 +35,15 @@ body {
 }
 
 hr {
-    margin: 1em 0 2em;
+    margin: 0.75em 0 2em;
     border-color: var(--orange);
 }
 
 h1 {
     text-transform: uppercase;
     font-weight: 400;
+    font-size: 1.25em;
+    margin-top: 1em;
 }
 
 a:link {
@@ -203,8 +205,11 @@ main {
     margin: auto;
     transition: transform 0.25s;
 }
+main .about p {
+    margin-bottom: 1em;
+}
 main .quote {
-    margin-top: 4em;
+    /* margin-top: 2em; */
     padding-bottom: 2em;
 }
 
