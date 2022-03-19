@@ -57,10 +57,6 @@ form label {
     display: block;
     font-size: 0.75em;
 }
-form input {
-    border-radius: 4px;
-    background: var(--bg);
-}
 form input:-webkit-autofill,
 form input:-webkit-autofill:hover,
 form input:-webkit-autofill:focus,
@@ -70,14 +66,23 @@ form input:-webkit-autofill:active {
     box-shadow: 0 0 0px 1000px var(--bg) inset;
     transition: background-color 5000s ease-in-out 0s;
 }
-form textarea {
-    background: var(--bg);
-    resize: none;
-}
 form input,
 form textarea {
-    color: var(--fg);
     font-family: inherit;
+    color: var(--fg);
+    background: var(--bg);
+    width: 100%;
+    font-size: 0.875em;
+    padding: 0.25em;
+    border-top: 1px solid var(--bg-darker);
+    border-left: 1px solid var(--bg-darker);
+    border-bottom: 1px solid #665c54;
+    border-right: 1px solid #665c54;
+    /* border: 1px solid var(--bg-bright); */
+    /* border: 1px solid #665c54; */
+}
+form textarea {
+    resize: none;
 }
 form .description {
     display: flex;
@@ -87,17 +92,12 @@ form .description {
 form .description .include {
     font-size: 0.75em;
 }
-form input,
-form textarea {
-    width: 100%;
-    font-size: 0.875em;
-    padding: 0.25em;
-}
 form button {
     background-color: var(--orange);
     width: 100%;
     font-size: 0.875em;
     padding: 1em;
+    border: none;
 }
 /* FORM }}} */
 
