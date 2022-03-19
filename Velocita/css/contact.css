@@ -8,7 +8,7 @@
 }
 
 .contact {
-    margin: 1em auto 0;
+    margin: 1em auto;
     width: 95%;
 }
 
@@ -24,24 +24,24 @@ form {
         rgba(29, 32, 33, 1) 0%,
         rgba(60, 56, 54, 1) 90%
     );
+    margin-top: 1em;
     padding: 0.5em;
-    /* margin-top: 1em; */
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
     grid-column-gap: 0.5em;
 }
 form #first-name {
-    grid-column: 1 / 6;
+    grid-column: 1 / 11;
+    padding-bottom: 0;
 }
 form #last-name {
-    grid-column: 6 / 11;
+    grid-column: 1 / 11;
 }
 form #email {
-    grid-column: 1 / 8;
+    grid-column: 1 / 11;
 }
 form #phone {
-    grid-column: 8 / 11;
+    grid-column: 1 / 11;
 }
 form .full {
     grid-column: 1 / 11;
@@ -84,18 +84,17 @@ form textarea {
 form textarea {
     resize: none;
 }
-form .description {
-    display: flex;
-    align-items: center;
-    gap: 1.5em;
-}
 form .description .include {
     font-size: 0.75em;
+    margin-left: 2em;
 }
 form button {
+    color: var(--bg-bright);
     background-color: var(--orange);
     width: 100%;
-    font-size: 0.875em;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: bold;
     padding: 1em;
     border: none;
 }
