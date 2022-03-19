@@ -49,7 +49,7 @@
         <section class="contact">
             <h2>CONTACT ME</h2>
             <form>
-                <p>
+                <p id="first-name">
                     <label for="firstName">Name</label>
                     <input
                         type="text"
@@ -58,7 +58,7 @@
                         required
                     />
                 </p>
-                <p>
+                <p id="last-name">
                     <label class="last" for="lastName">Name</label>
                     <input
                         type="text"
@@ -67,19 +67,19 @@
                         required
                     />
                 </p>
-                <p>
+                <p id="email">
                     <label for="email">Email</label>
                     <input
-                        type="text"
+                        type="email"
                         name="email"
                         placeholder="name@email.com"
                         required
                     />
                 </p>
-                <p>
+                <p id="phone">
                     <label for="phone">Phone</label>
                     <input
-                        type="text"
+                        type="tel"
                         name="phone"
                         placeholder="555-123-4567"
                         required
@@ -90,15 +90,9 @@
                         Project Description
                         <span class="include">include year/make/model</span>
                     </label>
-                    <textarea name="details" rows="5" required></textarea>
+                    <textarea name="details" rows="4" required></textarea>
                 </p>
                 <p class="full">
-                    <!-- <a -->
-                    <!--     class="btn" -->
-                    <!--     href="mailto:motovelocita@gmail.com" -->
-                    <!--     target="_blank" -->
-                    <!--     >SUBMIT</a -->
-                    <!-- > -->
                     <button type="">SUBMIT</button>
                 </p>
             </form>
